@@ -11,7 +11,5 @@ CREATE TABLE contests (
   writer VARCHAR(8) NOT NULL,
   contest_description TEXT,
   problem_number INTEGER DEFAULT 0 NOT NULL,
-  time_limit INTEGER DEFAULT 0 NOT NULL,  -- sec
-  memory_limit INTEGER DEFAULT 0 NOT NULL  -- MB
 );
 CREATE INDEX ON contests (contest_id);
