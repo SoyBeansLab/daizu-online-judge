@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS doj_user;
 CREATE DATABASE doj_user;
-\c problem;
+\c doj_user;
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
