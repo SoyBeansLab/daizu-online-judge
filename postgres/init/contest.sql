@@ -10,6 +10,6 @@ CREATE TABLE contests (
   contest_time INTEGER NOT NULL,  -- minutes
   writer VARCHAR(8) NOT NULL,
   contest_description TEXT,
-  problem_number INTEGER DEFAULT 0 NOT NULL,
+  problem_number INTEGER DEFAULT 0 NOT NULL
 );
 CREATE INDEX ON contests (contest_id);

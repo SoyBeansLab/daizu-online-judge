@@ -4,5 +4,5 @@ CREATE DATABASE doj_user;
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
-  username VARCHAR(16) PRIMARY KEY,
+  username VARCHAR(16) PRIMARY KEY
 );
