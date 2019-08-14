@@ -1,6 +1,6 @@
 DROP DATABASE IF EXISTS lang;
 CREATE DATABASE lang;
-\c enviroment;
+\c language;
 
 DROP TABLE IF EXISTS languages;
 CREATE TABLE languages (
