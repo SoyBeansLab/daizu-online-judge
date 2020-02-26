@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS lang;
-CREATE DATABASE lang;
+DROP DATABASE IF EXISTS language;
+CREATE DATABASE language;
 \c language;
 
 DROP TABLE IF EXISTS languages;

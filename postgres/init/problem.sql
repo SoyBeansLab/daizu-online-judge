@@ -11,6 +11,6 @@ CREATE TABLE problems (
   time_limit INTEGER NOT NULL,  -- sec
   memory_limit INTEGER NOT NULL,  -- MB
   score INTEGER NOT NULL,
-  writer VARCHAR(16) NOT NULL
+  writer VARCHAR(16) NOT NULL,
   problem_detail TEXT
 );
