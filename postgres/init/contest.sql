@@ -6,7 +6,8 @@ DROP TABLE IF EXISTS contests;
 CREATE TABLE contests (
   contest_id VARCHAR(8) UNIQUE NOT NULL,
   contest_name VARCHAR(32) NOT NULL,
-  contest_date TIMESTAMP NOT NULL,
+  contest_start_date TIMESTAMP NOT NULL,
+  contest_finish_date TIMESTAMP NOT NULL,
   contest_time INTEGER NOT NULL,  -- minutes
   writer VARCHAR(8) NOT NULL,
   contest_description TEXT,
