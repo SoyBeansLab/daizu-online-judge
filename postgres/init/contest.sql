@@ -1,6 +1,4 @@
-DROP DATABASE IF EXISTS contest;
-CREATE DATABASE contest;
-\c contest;
+\c doj;
 
 DROP TABLE IF EXISTS contests;
 CREATE TABLE contests (
@@ -14,17 +12,6 @@ CREATE TABLE contests (
   top_content TEXT,
   problem_number INTEGER DEFAULT 0 NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  update_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
--- update_atを更新するためのfunction
--- http://to-c.hatenablog.com/entry/2017/04/17/225826
-CREATE FUNCTION set_update_timestamp() RETURNS OPAQUE AS '
-  BEGIN
-    new.update_at := ''now'';
-    RETURN new;
-  END;
-' LANGUAGE 'plpgsql';
-
-CREATE TRIGGER update_trigger BEFORE UPDATE ON contests FOR EACH ROW EXECUTE PROCEDURE set_update_timestamp();
 
