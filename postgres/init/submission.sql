@@ -2,10 +2,10 @@
 
 DROP TABLE IF EXISTS submittions;
 CREATE TABLE submittions (
-  submmit_id VARCHAR(8) PRIMARY KEY,
+  submit_id VARCHAR(8) PRIMARY KEY,
+  problem_id VARCHAR(8) REFERENCES problems(problem_id),
   submit_date TIMESTAMP NOT NULL,
   username VARCHAR(16) NOT NULL,
-  problem_id VARCHAR(8) NOT NULL,
   result VARCHAR(4) DEFAULT 'WJ',
   language VARCHAR(8) NOT NULL,
   score INTEGER DEFAULT 0,

@@ -3,7 +3,7 @@
 DROP TABLE IF EXISTS problems;
 CREATE TABLE problems (
   problem_id VARCHAR(8) PRIMARY KEY,
-  contest_id VARCHAR(8) NOT NULL,
+  contest_id VARCHAR(8) REFERENCES contests(contest_id),
   problem_order VARCHAR(4) NOT NULL,
   problem_name VARCHAR(16) NOT NULL,
   time_limit INTEGER NOT NULL,  -- sec
