@@ -8,9 +8,9 @@ CREATE TABLE submittions (
   result VARCHAR(4) DEFAULT 'WJ',
   language VARCHAR(8) REFERENCES languages(language),
   score INTEGER DEFAULT 0,
-  test_case VARCHAR(8),
-  source_code TEXT,
   code_size INTEGER,  -- byte
+  all_test_case INTEGER,
+  passed_test_case INTEGER,
   compile_message TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
