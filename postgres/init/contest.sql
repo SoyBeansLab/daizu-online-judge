@@ -10,7 +10,7 @@ CREATE TABLE contests (
   writer VARCHAR(8) NOT NULL,
   description TEXT,
   top_content TEXT,
-  problem_number INTEGER DEFAULT 0 NOT NULL,
+  problem_number INTEGER DEFAULT 0,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
