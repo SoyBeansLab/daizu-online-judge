@@ -1,7 +1,7 @@
 \c doj;
 
-DROP TABLE IF EXISTS submittions;
-CREATE TABLE submittions (
+DROP TABLE IF EXISTS submissions;
+CREATE TABLE submissions (
   submit_id VARCHAR(8) PRIMARY KEY,
   problem_id VARCHAR(8) REFERENCES problems(problem_id),
   username VARCHAR(16) NOT NULL,
