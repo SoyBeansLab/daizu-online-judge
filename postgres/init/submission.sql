@@ -4,7 +4,6 @@ DROP TABLE IF EXISTS submittions;
 CREATE TABLE submittions (
   submit_id VARCHAR(8) PRIMARY KEY,
   problem_id VARCHAR(8) REFERENCES problems(problem_id),
-  submit_date TIMESTAMP NOT NULL,
   username VARCHAR(16) NOT NULL,
   result VARCHAR(4) DEFAULT 'WJ',
   language VARCHAR(8) REFERENCES languages(language),
