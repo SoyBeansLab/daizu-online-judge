@@ -1,6 +1,43 @@
-\c submittion;
+\c doj;
 
-INSERT INTO submittions VALUES ('00000001', current_timestamp, 'ucpr', 'p10', 'AC', 'Python3', 100, '5/5', 'print("Hello World!")', 12, '');
-INSERT INTO submittions VALUES ('00000002', current_timestamp, 'ucpr2', 'p10', 'WA', 'Python3', 100, '4/5', 'print("Hello World!")', 12, '');
-INSERT INTO submittions VALUES ('00000003', current_timestamp, 'ucpr3', 'p10', 'AC', 'Python3', 100, '5/5', 'print("Hello World!")', 12, '');
-INSERT INTO submittions VALUES ('00000004', current_timestamp, 'ucpr4', 'p10', 'AC', 'Python3', 100, '5/5', 'print("Hello World!")', 12, '');
+INSERT INTO submissions (submit_id, problem_id, username, result, language, score, code_size, all_test_case, passed_test_case, compile_message, source_code) VALUES (
+  'submit01',
+  'problem1',
+  'ucpr',
+  'AC',
+  'Python3',
+  200,
+  100,
+  10,
+  10,
+  '',
+  'Hello World!'
+);
+
+INSERT INTO submissions (submit_id, problem_id, username, result, language, score, code_size, all_test_case, passed_test_case, compile_message, source_code) VALUES (
+  'submit02',
+  'problem1',
+  'ucpr',
+  'AC',
+  'Python3',
+  200,
+  100,
+  10,
+  10,
+  '',
+  'Hello World!'
+);
+
+INSERT INTO submissions (submit_id, problem_id, username, result, language, score, code_size, all_test_case, passed_test_case, compile_message, source_code) VALUES (
+  'submit03',
+  'problem1',
+  'ucpr',
+  'AC',
+  'Python3',
+  200,
+  100,
+  10,
+  10,
+  '',
+  'Hello World!'
+);
