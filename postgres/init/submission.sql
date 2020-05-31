@@ -12,5 +12,6 @@ CREATE TABLE submittions (
   all_test_case INTEGER,
   passed_test_case INTEGER,
   compile_message TEXT,
+  source_code TEXT,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
