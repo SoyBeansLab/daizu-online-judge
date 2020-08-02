@@ -1,0 +1,9 @@
+\c doj;
+
+DROP TABLE IF EXISTS notifications;
+CREATE TABLE notifications (
+  id VARCHAR(32) PRIMARY KEY,
+  description TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

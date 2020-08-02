@@ -8,6 +8,7 @@ CREATE TABLE submissions (
   result VARCHAR(4) DEFAULT 'WJ',
   language VARCHAR(8) REFERENCES languages(language),
   score INTEGER DEFAULT 0,
+  execute_time INTEGER,  -- sec
   code_size INTEGER,  -- byte
   all_test_case INTEGER,
   passed_test_case INTEGER,
