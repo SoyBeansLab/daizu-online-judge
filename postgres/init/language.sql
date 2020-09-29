@@ -3,6 +3,7 @@
 DROP TABLE IF EXISTS languages;
 CREATE TABLE languages (
   language VARCHAR(16) PRIMARY KEY,
+  mime_type VARCHAR(16) NOT NULL,
   version VARCHAR(32) NOT NULL,
   base_image VARCHAR(16) NOT NULL,  -- base image of docker
   compile_command VARCHAR(64),
